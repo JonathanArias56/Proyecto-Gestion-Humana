@@ -1,0 +1,53 @@
+<h1>Bienvenido a los datos!</h1>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+     <tbody>
+      <tr *ngFor="let dato of datos">
+        <td>{{dato.id}}</td>
+        <td>{{dato.name}}</td>
+        <td>{{dato.username}}</td>
+        <td>{{dato.email}}</td>
+        <td><b>Street: </b>{{dato.address.street}} - <b>Suite: </b>{{dato.address.suite}}- <b>City: </b> {{dato.address.city}}-<b>zipcode: </b>{{dato.address.zipcode}}</td>
+
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>
+
+<!-- <h1>Bienvenido a los datos!</h1>
+<div class="container"> 
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let of dato of datos">
+        <td>{{dato.id}}</td>
+        <td>{{dato.name}}</td>
+        <td>{{dato.username}}</td>
+        <td>{{dato.email}}</td>
+        <td><b>Street: </b>{{dato.address.street}} - <b>Suite: </b>{{dato.address.suite}}- <b>City: </b> {{dato.address.city}}-<b>zipcode: </b>{{dato.address.zipcode}}</td>
+
+      </tr>
+    </tbody>
+
+  </table>
+
+</div> -->
